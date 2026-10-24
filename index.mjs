@@ -26,6 +26,7 @@ server.on('upgrade', (req, socket, head) => {
 
 server.listen({
   port: port,
+  host: '0.0.0.0',
 });
 
-console.log(`Listening on http://localhost:${port}`)
+console.log(`Listening on http://0.0.0.0:${port}`);   
